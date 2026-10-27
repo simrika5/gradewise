@@ -1,0 +1,538 @@
+
+{
+  "semesters": [
+    {
+      "semester": 1,
+      "subjects": [
+        {
+          "code": "BSH1001",
+          "name": "Mathematics I",
+          "credits": 3,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "BSH1002",
+          "name": "Physics",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 10 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 15 }
+          ]
+        },
+        {
+          "code": "BSH1003",
+          "name": "English",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 10 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 15 }
+          ]
+        },
+        {
+          "code": "BSH1004",
+          "name": "Computer Programming",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 30 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 20 }
+          ]
+        },
+        {
+          "code": "BSH1005",
+          "name": "Fundamentals of Computing Technology",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 15 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 10 }
+          ]
+        },
+        {
+          "code": "BSH1006",
+          "name": "Engineering Drawing",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Practical", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 40 }
+          ]
+        },
+        {
+          "code": "BSH1007",
+          "name": "Workshop Technology",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 10 },
+            { "name": "Internal Practical", "maxMarks": 40 }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "subjects": [
+        {
+          "code": "SUBJ2001",
+          "name": "Mathematics II",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ2002",
+          "name": "Chemistry",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 10 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 15 }
+          ]
+        },
+        {
+          "code": "SUBJ2003",
+          "name": "OOP with C++",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 30 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 20 }
+          ]
+        },
+        {
+          "code": "SUBJ2004",
+          "name": "Digital Logic",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ2005",
+          "name": "Basic Electrical Engineering",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ2006",
+          "name": "Applied Mechanics",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "subjects": [
+        {
+          "code": "SUBJ3001",
+          "name": "Mathematics III",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ3002",
+          "name": "Data Structure and Algorithm",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 30 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 20 }
+          ]
+        },
+        {
+          "code": "SUBJ3003",
+          "name": "Object-Oriented Analysis and Design",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ3004",
+          "name": "Computer Graphics",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 30 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 20 }
+          ]
+        },
+        {
+          "code": "SUBJ3005",
+          "name": "Electronic Devices and Circuits",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ3006",
+          "name": "Applied Sociology",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 20 },
+            { "name": "Final Theory", "maxMarks": 30 }
+          ]
+        },
+        {
+          "code": "SUBJ3007",
+          "name": "Project I",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Practical", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 40 }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "subjects": [
+        {
+          "code": "SUBJ4001",
+          "name": "Database Management Systems",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 30 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 20 }
+          ]
+        },
+        {
+          "code": "SUBJ4002",
+          "name": "Python Programming",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 30 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 20 }
+          ]
+        },
+        {
+          "code": "SUBJ4003",
+          "name": "Discrete Structure",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ4004",
+          "name": "Microprocessor",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 50 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ4005",
+          "name": "Communication System",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ4006",
+          "name": "Probability and Statistics",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 20 },
+            { "name": "Internal Practical", "maxMarks": 20 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "subjects": [
+        {
+          "code": "SUBJ5001",
+          "name": "Algorithm Analysis and Design",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ5002",
+          "name": "Computer Architecture and Design",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 20 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ5003",
+          "name": "Numerical Methods",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 30 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 20 }
+          ]
+        },
+        {
+          "code": "SUBJ5004",
+          "name": "Operating System",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 30 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 20 }
+          ]
+        },
+        {
+          "code": "SUBJ5005",
+          "name": "Engineering Economics",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ5006",
+          "name": "Research Methodology",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 20 },
+            { "name": "Final Theory", "maxMarks": 30 }
+          ]
+        },
+        {
+          "code": "SUBJ5007",
+          "name": "Project II",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Practical", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 40 }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "subjects": [
+        {
+          "code": "SUBJ6001",
+          "name": "Artificial Intelligence",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ6002",
+          "name": "Computer Network",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 30 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 20 }
+          ]
+        },
+        {
+          "code": "SUBJ6003",
+          "name": "Internet of Things",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ6004",
+          "name": "Software Engineering",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ6005",
+          "name": "Theory of Computation",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 30 },
+            { "name": "Final Theory", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 20 }
+          ]
+        },
+        {
+          "code": "SUBJ6006",
+          "name": "Elective I",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 7,
+      "subjects": [
+        {
+          "code": "SUBJ7001",
+          "name": "Distributed and Cloud Computing",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ7002",
+          "name": "Information Technology Project Management",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ7003",
+          "name": "Simulation and Modeling",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ7004",
+          "name": "Elective II",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ7005",
+          "name": "Elective III",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ7006",
+          "name": "Project III",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Practical", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 40 }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "subjects": [
+        {
+          "code": "SUBJ8001",
+          "name": "Security",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ8002",
+          "name": "Engineering Professional Practice",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 20 },
+            { "name": "Final Theory", "maxMarks": 30 }
+          ]
+        },
+        {
+          "code": "SUBJ8003",
+          "name": "Elective IV",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Theory", "maxMarks": 40 },
+            { "name": "Internal Practical", "maxMarks": 25 },
+            { "name": "Final Theory", "maxMarks": 60 }
+          ]
+        },
+        {
+          "code": "SUBJ8004",
+          "name": "Project III - Part B",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Practical", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 40 }
+          ]
+        },
+        {
+          "code": "SUBJ8005",
+          "name": "Internship",
+          "credits": 0,
+          "components": [
+            { "name": "Internal Practical", "maxMarks": 60 },
+            { "name": "Final Practical", "maxMarks": 40 }
+          ]
+        }
+      ]
+    }
+  ]
+}

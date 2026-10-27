@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#142d4e">
+  <title>Gradewise — Academic Performance Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Gradewise home">
+        <span class="brand-icon">G</span>
+        <span>
+          <strong>gradewise</strong>
+          <small>ACADEMIC PLANNER</small>
+        </span>
+      </a>
+
+      <p class="nav-label">WORKSPACE</p>
+
+      <button class="nav-item active" data-view="dashboard-view">
+        <span>⌂</span> Dashboard
+      </button>
+
+      <button class="nav-item" data-view="subjects-view">
+        <span>▤</span> My semesters
+      </button>
+
+      <button class="nav-item" data-view="settings-view">
+        <span>⚙</span> Grade settings
+      </button>
+
+      <div class="sidebar-bottom">
+        <div class="tip-card">
+          <span class="tip-icon">✳</span>
+          <strong>Small progress adds up.</strong>
+          <p>Track your marks, explore your possibilities, and plan your next academic step.</p>
+        </div>
+        <p class="version">GRADEWISE · VERSION 2.0</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">YOUR ACADEMIC SPACE</p>
+          <h1 id="page-title">Dashboard</h1>
+        </div>
+
+        <div class="topbar-right">
+          <div class="live-badge">
+            <span></span> AUTO-CALCULATED
+          </div>
+          <div class="avatar" title="Gradewise">G</div>
+        </div>
+      </header>
+
+      <!-- DASHBOARD -->
+      <section id="dashboard-view" class="app-view">
+        <div class="welcome-row">
+          <div>
+            <h2>Your progress, at a glance.</h2>
+            <p>Enter your marks to explore your predicted academic performance.</p>
+          </div>
+
+          <label class="semester-picker">
+            <span>SELECT SEMESTER</span>
+            <select id="semester-select"></select>
+          </label>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card accent-card">
+            <div class="stat-top">
+              <span>Estimated GPA</span>
+              <span class="stat-icon">✦</span>
+            </div>
+            <div class="stat-value" id="gpa-value">—</div>
+            <p id="gpa-caption">Enter marks to begin.</p>
+            <div class="mini-progress">
+              <span id="gpa-progress"></span>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-top">
+              <span>Subjects completed</span>
+              <span class="stat-icon">✓</span>
+            </div>
+            <div class="stat-value" id="completed-value">0/0</div>
+            <p>Subjects with all required marks entered.</p>
+            <div class="mini-progress">
+              <span id="completed-progress"></span>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-top">
+              <span>Average marks</span>
+              <span class="stat-icon">↗</span>
+            </div>
+            <div class="stat-value" id="average-value">—</div>
+            <p>Average percentage of completed subjects.</p>
+            <div class="mini-progress">
+              <span id="average-progress"></span>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-top">
+              <span>Internal marks</span>
+              <span class="stat-icon">✎</span>
+            </div>
+            <div class="stat-value" id="internal-value">—</div>
+            <p>Entered internal marks across this semester.</p>
+            <div class="mini-progress">
+              <span id="internal-progress"></span>
+            </div>
+          </article>
+        </div>
+
+        <div class="workspace-grid">
+          <section class="panel marks-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">MARKS WORKSPACE</p>
+                <h2 id="marks-heading">Semester marks</h2>
+              </div>
+              <button class="button button-light" id="clear-semester" type="button">
+                Reset marks
+              </button>
+            </div>
+
+            <div class="notice">
+              <span>ⓘ</span>
+              <p>
+                Enter marks for each available component. Maximum marks come from
+                your subject data. Leave a field blank until you know your mark.
+              </p>
+            </div>
+
+            <div id="subject-list"></div>
+
+            <div class="panel-footer">
+              <span id="saved-status" aria-live="polite">Your changes are saved in this browser.</span>
+              <button class="button button-primary" id="see-result" type="button">
+                See Your Predicted Result →
+              </button>
+            </div>
+          </section>
+
+          <aside class="right-column">
+            <section class="panel planner-panel">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">GOAL PLANNER</p>
+                  <h2>Plan your GPA</h2>
+                </div>
+                <span class="planner-icon">✧</span>
+              </div>
+
+              <p class="muted">Your target GPA</p>
+
+              <div class="target-number">
+                <strong id="target-gpa-display">3.50</strong>
+                <span>/ 4.00</span>
+              </div>
+
+              <input id="target-gpa" type="range"
+                     min="0" max="4" step="0.05" value="3.5">
+
+              <div class="range-labels">
+                <span>0.00</span>
+                <span>4.00</span>
+              </div>
+
+              <label class="field-label" for="scenario-select">PREDICTION SCENARIO</label>
+              <select id="scenario-select" class="full-select">
+                <option value="0">Current marks</option>
+                <option value="5">Improve final marks by 5%</option>
+                <option value="10">Improve final marks by 10%</option>
+                <option value="15">Improve final marks by 15%</option>
+              </select>
+
+              <div class="planner-result">
+                <span class="result-sparkle">✧</span>
+                <div>
+                  <strong id="scenario-result">Your plan is ready.</strong>
+                  <p id="scenario-caption">
+                    Enter your marks to see how your results compare with your target.
+                  </p>
+                </div>
+              </div>
+
+              <button class="button button-primary full-button"
+                      id="apply-scenario" type="button">
+                Update prediction
+              </button>
+
+              <p class="tiny-note">
+                Scenarios are estimates, not guaranteed grades. Blank marks are
+                not treated as zero when predicting your current performance.
+              </p>
+            </section>
+
+            <section class="panel chart-panel">
+              <p class="eyebrow">SUBJECT OVERVIEW</p>
+              <h2>Performance</h2>
+              <div id="performance-chart" class="performance-chart"></div>
+            </section>
+          </aside>
+        </div>
+      </section>
+
+      <!-- SEMESTERS -->
+      <section id="subjects-view" class="app-view hidden">
+        <div class="panel page-panel">
+          <p class="eyebrow">YOUR COURSE</p>
+          <h2>All semesters</h2>
+          <p class="muted">
+            Review progress and open a semester to enter or update marks.
+          </p>
+          <div id="semester-cards" class="semester-cards"></div>
+        </div>
+      </section>
+
+      <!-- SETTINGS -->
+      <section id="settings-view" class="app-view hidden">
+        <div class="panel page-panel">
+          <p class="eyebrow">PERSONALISE YOUR PLANNER</p>
+          <h2>Grade settings</h2>
+          <p class="muted">
+            Adjust the percentage boundaries to match your institution's grading rules.
+          </p>
+
+          <div class="settings-warning">
+            These are configurable defaults, not a verified university grading policy.
+            Confirm your institution's official grade boundaries before relying on results.
+          </div>
+
+          <div class="table-wrap">
+            <table class="settings-table">
+              <thead>
+                <tr>
+                  <th>Grade</th>
+                  <th>Minimum percentage</th>
+                  <th>Grade point</th>
+                </tr>
+              </thead>
+              <tbody id="grade-settings-body"></tbody>
+            </table>
+          </div>
+
+          <div class="settings-actions">
+            <button class="button button-primary" id="save-settings" type="button">
+              Save grade settings
+            </button>
+            <button class="button button-light" id="reset-grades" type="button">
+              Restore defaults
+            </button>
+          </div>
+
+          <div class="settings-section-heading">
+            <h3>Subject credit hours</h3>
+            <p class="muted">
+              Enter official credits when you know them. Leave unknown credits blank.
+              GPA is credit-weighted only when all included subjects have known credits.
+            </p>
+          </div>
+
+          <div id="credit-settings"></div>
+
+          <button class="button button-primary" id="save-credits" type="button">
+            Save credit hours
+          </button>
+        </div>
+      </section>
+
+      <!-- RESULT REPORT -->
+      <section id="result-view" class="app-view hidden">
+        <div class="panel result-report">
+          <div class="result-report-top">
+            <div>
+              <p class="eyebrow">GRADEWISE · ACADEMIC REPORT</p>
+              <h2>Predicted semester result</h2>
+              <p class="muted" id="report-semester">Semester</p>
+            </div>
+            <button class="button button-light" id="back-to-dashboard" type="button">
+              ← Back to dashboard
+            </button>
+          </div>
+
+          <div class="report-summary">
+            <div>
+              <span>Estimated GPA</span>
+              <strong id="report-gpa">—</strong>
+              <small id="report-gpa-note"></small>
+            </div>
+            <div>
+              <span>Average percentage</span>
+              <strong id="report-average">—</strong>
+              <small>Completed subjects only</small>
+            </div>
+            <div>
+              <span>Completed subjects</span>
+              <strong id="report-completed">—</strong>
+              <small id="report-total-subjects">In this semester</small>
+            </div>
+          </div>
+
+          <div class="report-notice" id="report-notice">
+            This report is a prediction based on the marks entered.
+          </div>
+
+          <div class="table-wrap">
+            <table class="settings-table report-table">
+              <thead>
+                <tr>
+                  <th>Subject</th>
+                  <th>Internal</th>
+                  <th>Final</th>
+                  <th>Total</th>
+                  <th>Percentage</th>
+                  <th>Grade</th>
+                  <th>Credits</th>
+                </tr>
+              </thead>
+              <tbody id="report-table-body"></tbody>
+            </table>
+          </div>
+
+          <div class="report-bottom">
+            <p>
+              This is an unofficial prediction, not an official transcript or
+              guarantee of your final university result.
+            </p>
+            <button class="button button-primary" id="print-result" type="button">
+              Print result
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="app-footer">
+        <span>Gradewise · Academic Performance Planner</span>
+        <span>Your marks stay in this browser on this device.</span>
+      </footer>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
